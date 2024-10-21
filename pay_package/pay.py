@@ -1,3 +1,8 @@
+from pydantic import BaseModel
+
+
+class Ok(BaseModel):
+    ok: bool = True
 
 
 class Pay:
@@ -7,7 +12,7 @@ class Pay:
         self.database_reader_url = database_reader_url
 
     def reserve(self, payment_no: str) -> None:
-        print(f"[reserve]{payment_no}")
+        print(f"[reserve]{payment_no} {Ok().ok}")
 
     def checkout(self, payment_no: str) -> None:
         print(f"[checkout]{payment_no}")
