@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "simple-package"
+name = "pay-package"
 version = "0.1.0"
 description = ""
 authors = ["SW <aliwo@naver.com>"]
